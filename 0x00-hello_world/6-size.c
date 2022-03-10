@@ -13,9 +13,9 @@ int main(void)
 	double doubleType;
 	char charType;
 
-	printf("Size of a char: ", sizeof(charType));
-	printf("Size of a int: ", sizeof(intType));
-        printf("Size of a long int: ", sizeof(longInt));
-	printf("Size of a long long int: ", sizeof(longlongInt));
-	printf("Size of a float: ", sizeof(float));
+	printf("Size of a char: %lu\n ", sizeof(charType));
+	printf("Size of a int: %lu\n ", sizeof(intType));
+        printf("Size of a long int: %lu\n ", sizeof(longInt));
+	printf("Size of a long long int: %lu\n ", sizeof(longlongInt));
+	printf("Size of a float: %lu\n ", sizeof(float));
 }

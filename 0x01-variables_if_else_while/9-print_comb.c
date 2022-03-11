@@ -6,8 +6,7 @@
 */
 int main(void)
 {
-	char c;
-	char d = '\n';
+	int c;
 
 	for ( c = '0'; c <= '9'; c++)
 	{
@@ -15,6 +14,5 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
-	putchar(d);
 	return (0);
 }

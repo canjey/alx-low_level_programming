@@ -8,6 +8,11 @@ void print_to_98(int n)
 {
 	int a;
 
+	if (n == 98)
+	{
+		_putchar(n);
+		_putchar('\n');
+	}
 	if (n >= 98)
 	{
 		for (a = n; a <= 98; a++)
@@ -28,8 +33,11 @@ void print_to_98(int n)
 				_putchar((a % 10) + '0');
 				
 			}
+			else
+			{
 			_putchar((a / 10) + '0');
 			_putchar((a % 10) + '0');
+			}
 			
 		}
 	}

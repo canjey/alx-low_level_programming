@@ -16,11 +16,15 @@ void print_to_98(int n)
 	}
 	else if (n >= 98)
 	{
-		for (a = n; a <= 98; a++)
+		for (a = 98; a <= n; a++)
 		{
 			_putchar((a / 10) + '0');
 			_putchar((a % 10) + '0');
+			_putchar(',');
+			_putchar(' ');
 		}
+		_putchar('\n');
+				
 	}
 	else if (n <= 98)
 	{
@@ -32,14 +36,15 @@ void print_to_98(int n)
 				_putchar(' ');
 				_putchar((a / 10) + '0');
 				_putchar((a % 10) + '0');
-				
 			}
 			else
 			{
 				_putchar((a / 10) + '0');
 				_putchar((a % 10) + '0');
 			}
-			
+					
 		}
+		_putchar('\n');
+				
 	}
 }

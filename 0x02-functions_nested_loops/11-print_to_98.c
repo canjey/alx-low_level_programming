@@ -20,8 +20,17 @@ void print_to_98(int n)
 	{
 		for (a = 98; a >= n; a--)
 		{
+			if (a != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((a / 10) + '0');
+				_putchar((a % 10) + '0');
+				
+			}
 			_putchar((a / 10) + '0');
 			_putchar((a % 10) + '0');
+			
 		}
 	}
 }

@@ -9,6 +9,6 @@ void jack_bauer(void)
 
 	for (a = 0.00; a < 24.00; a++)
 	{
-		_putchar(a);
+		_putchar('a');
 	}
 }

@@ -1,8 +1,3 @@
-/*
- * File: 100-times_table.c
- * Auth: Brennan D Baraban
- */
-
 #include "main.h"
 
 /**
@@ -12,38 +7,40 @@
  */
 void print_times_table(int n)
 {
-	int num, mult, prod;
+	int a, b, product;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (num = 0; num <= n; num++)
+		for (a = 0; a < n; a++)
 		{
-			_putchar('0');
-
-			for (mult = 1; mult <= n; mult++)
+			for (b = 0; b < n; b++)
 			{
-				_putchar(',');
-				_putchar(' ');
-
-				prod = num * mult;
-
-				if (prod <= 99)
-					_putchar(' ');
-				if (prod <= 9)
-					_putchar(' ');
-
-				if (prod >= 100)
+				product = a * b;
+				if (b != 0)
 				{
-					_putchar((prod / 100) + '0');
-					_putchar(((prod / 10)) % 10 + '0');
+					_putchar(',');
+					_putchar(' ');
 				}
-				else if (prod <= 99 && prod >= 10)
+				if (b == 0)
 				{
-					_putchar((prod / 10) + '0');
+					_putchar('0');
 				}
-				_putchar((prod % 10) + '0');
+				else if ((product > 9) && (product <= 99)
+				{
+					_putchar((product / 10) + '0');
+					_putchar((product % 10) + '0');
+				}
+				else if ((product >= 100)
+				{
+					_putchar((product / 100) + '0');
+					_putchar((product % 100) + '0');
+				}
+				else if ((product <= 9) && (b != 0))
+				{
+					_putchar(' ');
+					_putchar((product / 10) + '0');
+				}
 			}
-			_putchar('\n');
 		}
 	}
 }

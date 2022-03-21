@@ -20,8 +20,8 @@ void puts_half(char *str)
 		b = (i / 2) + 1;
 	}
 	for (c = b; c < i; c++)
-		{
-			_putchar(str[c]);
-		}
+	{
+		_putchar(str[c]);
+	}
 	_putchar('\n');
 }

@@ -8,19 +8,10 @@
 */
 int main(void)
 {
-	int counter = 0;
-	srandom(time(NULL));
-	char randChar;
-	int password;
+	int num;
 
-	printf("Type in a password length");
-	scanf("%d", &password);
-	while (counter < password)
-	{
-		randChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"[random() % 62];
-		printf("%c", randChar);
-		counter++;
-	}
-	printf("\n");
+	srand(time(0));
+	num = rand();
+	printf("%i\n", num);
 	return (0);
 }

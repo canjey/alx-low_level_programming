@@ -13,7 +13,7 @@ int main(void)
 	char randChar;
 	int password;
 
-	printf("Type in a password length);
+	printf("Type in a password length");
 	scanf("%d", &password);
 	while (counter < password)
 	{
@@ -22,5 +22,5 @@ int main(void)
 		counter++;
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }

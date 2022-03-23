@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * leet - function that changes alphabets to values
-* @str: takes a pointer as an argument
+* @s: takes a pointer as an argument
 * Return: character
 */
 char *leet(char *s)

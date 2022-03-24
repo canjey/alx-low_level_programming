@@ -8,4 +8,5 @@ char *string_toupper(char *);
 char *cap_string(char *str);
 char *rot13(char *);
 void print_number(int n);
-void print_line(char *c, int s, int l)
+void print_line(char *c, int s, int l);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);

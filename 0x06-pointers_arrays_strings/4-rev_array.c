@@ -1,15 +1,16 @@
 /**
 * reverse_array- reverses a string
-* @s1: first string
-* @s2: second string
+* @a: first string
+* @n: size of string
 * Return: A pointer to an integer
 */
 void reverse_array(int *a, int n)
 {
-	int rev, i = n;
+	int i;
+	int rev[n];
 
-	while (i < 0)
+	for (i = n; i > 0; i++)
 	{
-		a[i--] = rev;
+		rev[i] = a[i];
 	}
 }

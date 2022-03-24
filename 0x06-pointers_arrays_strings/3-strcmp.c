@@ -6,13 +6,13 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-	if (s1 == s2)
+	int i, j;
+
+	i = 0;
+	while (s1[i] == s2[i] && s2[i] != '\0')
 	{
-		return (0);
+		i++;
 	}
-	else if (s1[0] > s2[0])
-	{
-		return (15);
-	}
-	return (-15);
+	j = s1[i] - s2[i];
+	return (j);
 }

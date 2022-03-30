@@ -1,3 +1,10 @@
+
+/**
+* _pow_recursion - A function that finds the power of numbers
+* @x: Takes integer as first argument
+* @y: Takes integer as second argument
+* Return: Integer
+*/
 int _pow_recursion(int x, int y)
 {
 	if (y == 0 || x == 1)

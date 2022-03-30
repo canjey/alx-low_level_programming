@@ -1,4 +1,4 @@
-
+#include "main.h"
 /**
 * _strlen_recursion - A function that counts the number of strings
 * @s: A pointer to the string
@@ -7,13 +7,10 @@
 
 int _strlen_recursion(char *s)
 {
-	int i, counter = 0;
-
-	i = 0;
-	while (s[i] != '\0')
+	if (*s == '\0')
 	{
-		i++;
-		counter++;
+		return (0);
 	}
-	return (counter);
+	s++;
+	return (_strlen_recursion(s) + 1);
 }

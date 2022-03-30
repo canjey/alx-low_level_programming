@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+* _print_rev_recursion - A function that prints out a string in reverse
+* @s: A pointer of the string
+*/
 void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')

@@ -1,3 +1,9 @@
+
+/**
+* factorial - A function to find the factorial of the numbers
+* @n: Takes the integer as the argument
+* Return: An integer
+*/
 int factorial(int n)
 {
 	if (n == 1)

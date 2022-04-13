@@ -3,7 +3,7 @@
 /**
 * array_iterator - executesa function given as a param
 * @array: Takes a pointer of array
-* size: size of the array
+* @size: size of the array
 * @action: pointer of the function to use
 * Return: void
 */
